@@ -5,8 +5,6 @@ import HeroSmall from './components/HeroSmall';
 
 function App() {
   return (
-    <div>
-
       <body>
         <header className="header">
           <Navbar/> 
@@ -14,7 +12,6 @@ function App() {
           <HeroSmall/>
 
       </body>
-    </div>
   );
 }
 
