@@ -140,7 +140,7 @@ a.navbar-main__link:active {color: none;}
   align-items: center;
   height: 2.5rem;
   gap: 0.5rem;
-  padding: 0 1.25rem 0 1.25rem;
+  padding: 0 1rem 0 1rem;
   background:var(--quaternary-color);
   font-weight: 600;
   text-transform: uppercase;
@@ -208,8 +208,8 @@ a.navbar-main__link:active {color: none;}
   flex-direction: column;
   align-items: center;
   width: 22.5rem;
-  height: calc(100vh - 100px);
-  left: -25rem;
+  height: calc(100vh - 6.25rem);
+  left: -22.5rem;
   background-color: var(--primary-color);
   padding: 1rem;
   z-index: 999;
@@ -278,9 +278,8 @@ a.navbar-main__link:active {color: none;}
 .side-nav-main__inner-list-footer-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 1rem;
   width: 100%;
   height: 100%;
   padding: 1rem;
@@ -309,6 +308,71 @@ a.navbar-main__link:active {color: none;}
   background-color: var(--tertiary-color);
   scale: 1.05;
 }
+
+.account-nav-main {
+  position: fixed;
+  top: 6.25rem;
+  content: '';
+  width: 100vw;
+  height: calc(100vh - 6.25rem);
+  visibility: hidden;
+  z-index: 999;
+}
+
+.account-nav-main__background {
+  content: '';
+  position: absolute;
+  bottom:0;
+  right:0;
+  width: 100vw;
+  height: calc(100vh - 6.25rem);
+  background: rgba(6, 6, 6, 0.75);
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  transition:all 200ms ease;
+}
+
+.account-nav-main__background.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.account-nav-main__inner {
+  position: fixed;
+  top: 6.25rem;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20rem;
+  height: calc(100vh - 50rem);
+  right: -20rem;
+  background-color: var(--primary-color);
+  padding: 1rem;
+  z-index: 999;
+  transition: ease-in-out 200ms;
+  visibility: hidden;
+}
+
+.account-nav-main__inner.active {
+  visibility: visible;
+  right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
