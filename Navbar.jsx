@@ -3,7 +3,6 @@ import {useEffect, useRef, useState } from "react";
 import MenuIcon from '@mui/icons-material/Menu';
 import LogoImg from '../temp-logo.png';
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import PersonIcon from '@mui/icons-material/Person';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -74,7 +73,7 @@ function Navbar() {
           <MenuIcon/>
           </button>
           </li>
-          <a className="navbar-main__link"href="/#"style={{marginLeft: '32px',marginRight: '32px'}}>
+          <a className="navbar-main__link"href="/#"style={{marginLeft: '1.875rem',marginRight: '1.875rem'}}>
             <li className="navbar-main__list-item list-item__menu-logo">
               <img src={LogoImg} className="App-logo" alt="logo" style={{width:140}}/>
             </li>
@@ -105,14 +104,13 @@ function Navbar() {
             </a>
           </li>
           <div className="navbar-main__list-item list-item__manage-button">
-            <button onClick={handleClick02}className={`navbar__button${setActiveCheck02 ? ' active' : ''}`}style={{width:"6.25rem"}}>
-              <ArrowDropDownIcon/>
+            <button onClick={handleClick02}className={`navbar__button${setActiveCheck02 ? ' active' : ''}`}>
               <PersonIcon/>
             </button>
           </div>
           </ul>
           <div className="navbar-links">
-            <div className="navbar-links__item">
+            <div className="navbar-links__item-text">
               <p>Connect with us:</p>
             </div>
             <a className='navbar-main__link'href="/#">
@@ -316,7 +314,9 @@ function Navbar() {
     <div onClick={handleClick02}className={`account-nav-main__background${setActiveCheck02 ? ' active' : ''}`}/>
 
     <div className={`account-nav-main__inner${setActiveCheck02 ? ' active' : ''}`}>
+      <div className="account-nav-main__inner-list">
 
+      </div>
     </div>
 </div>
 
