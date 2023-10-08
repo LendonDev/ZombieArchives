@@ -20,6 +20,10 @@ import QueryStatsIcon from '@mui/icons-material/QueryStats';
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 import TheatersIcon from '@mui/icons-material/Theaters';
 import GradingIcon from '@mui/icons-material/Grading';
+import LoginIcon from '@mui/icons-material/Login';
+import PersonAddAlt1Icon from '@mui/icons-material/PersonAddAlt1';
+import LightModeIcon from '@mui/icons-material/LightMode';
+import HelpIcon from '@mui/icons-material/Help';
 
 function Navbar() {
 
@@ -103,11 +107,11 @@ function Navbar() {
               <div className="list-item__menu-item-inner">Submit Game<ArrowOutwardIcon/></div>
             </a>
           </li>
-          <div className="navbar-main__list-item list-item__manage-button">
+          <li className="navbar-main__list-item list-item__manage-button">
             <button onClick={handleClick02}className={`navbar__button${setActiveCheck02 ? ' active' : ''}`}>
               <PersonIcon/>
             </button>
-          </div>
+          </li>
           </ul>
           <div className="navbar-links">
             <div className="navbar-links__item-text">
@@ -146,9 +150,9 @@ function Navbar() {
 
 
 
-            <div className="side-nav-main__inner-list-item-title">Main Menu</div>
+            <li className="side-nav-main__inner-list-item-title">Main Menu</li>
 
-              <div className="side-nav-main-inner-list-container">
+              <ul className="side-nav-main-inner-list-container">
 
             <a className="navbar-main__link"href="#">
               <li className="side-nav-main__inner-list-item">
@@ -181,46 +185,46 @@ function Navbar() {
             <a className="navbar-main__link"href="#">
               <li className="side-nav-main__inner-list-item">
                 <div className="side-nav-main__inner-list-item-icon"><LocalFireDepartmentIcon/></div>
-                <div className="side-nav-main__inner-list-item-subtitle">Submit Game<ArrowOutwardIcon/></div>
+                <div className="side-nav-main__inner-list-item-subtitle">Submit Game</div>
               </li>
             </a>
-              </div>
+              </ul>
 
 
 
 
 
-            <div className="side-nav-main__inner-list-item-title">Community</div>
+            <li className="side-nav-main__inner-list-item-title">Community</li>
 
-            <div className="side-nav-main-inner-list-container">
+            <ul className="side-nav-main-inner-list-container">
 
-            <a className="navbar-main__link"href="#">
-              <li className="side-nav-main__inner-list-item">
-                <div className="side-nav-main__inner-list-item-icon"><GroupsIcon/></div>
-                <div className="side-nav-main__inner-list-item-subtitle">Profiles</div>
-              </li>
-            </a>
+              <a className="navbar-main__link"href="#">
+                <li className="side-nav-main__inner-list-item">
+                  <div className="side-nav-main__inner-list-item-icon"><GroupsIcon/></div>
+                  <div className="side-nav-main__inner-list-item-subtitle">Profiles</div>
+                </li>
+              </a>
 
-            <a className="navbar-main__link"href="#">
-              <li className="side-nav-main__inner-list-item">
-                <div className="side-nav-main__inner-list-item-icon"><ShieldIcon/></div>
-                <div className="side-nav-main__inner-list-item-subtitle">Site Staff</div>
-              </li>
-            </a>
+              <a className="navbar-main__link"href="#">
+                <li className="side-nav-main__inner-list-item">
+                  <div className="side-nav-main__inner-list-item-icon"><ShieldIcon/></div>
+                  <div className="side-nav-main__inner-list-item-subtitle">Site Staff</div>
+                </li>
+              </a>
 
-            <a className="navbar-main__link"href="#">
-              <li className="side-nav-main__inner-list-item">
-                <div className="side-nav-main__inner-list-item-icon"><ForumIcon/></div>
-                <div className="side-nav-main__inner-list-item-subtitle">Forums</div>
-              </li>
-            </a>
+              <a className="navbar-main__link"href="#">
+                <li className="side-nav-main__inner-list-item">
+                  <div className="side-nav-main__inner-list-item-icon"><ForumIcon/></div>
+                  <div className="side-nav-main__inner-list-item-subtitle">Forums</div>
+                </li>
+              </a>
 
-            <a className="navbar-main__link"href="#">
-              <li className="side-nav-main__inner-list-item">
-                <div className="side-nav-main__inner-list-item-icon"><TwitterIcon/></div>
-                <div className="side-nav-main__inner-list-item-subtitle">Twitter</div>
-              </li>
-            </a>
+              <a className="navbar-main__link"href="#">
+                <li className="side-nav-main__inner-list-item">
+                  <div className="side-nav-main__inner-list-item-icon"><TwitterIcon/></div>
+                  <div className="side-nav-main__inner-list-item-subtitle">Twitter</div>
+                </li>
+              </a>
 
             <a className="navbar-main__link"href="#">
             <li className="side-nav-main__inner-list-item">
@@ -233,11 +237,11 @@ function Navbar() {
               </li>
             </a>
 
-            </div>
+            </ul>
 
-            <div className="side-nav-main__inner-list-item-title">Tools & More</div>
+            <li className="side-nav-main__inner-list-item-title">Tools & More</li>
 
-            <div className="side-nav-main-inner-list-container">
+            <ul className="side-nav-main-inner-list-container">
 
               <a className="navbar-main__link"href="#">
                 <li className="side-nav-main__inner-list-item">
@@ -275,9 +279,9 @@ function Navbar() {
               </a>
 
 
-            </div>
+            </ul>
 
-            <div className="side-nav-main__inner-list-footer-container">
+            <li className="side-nav-main__inner-list-footer-container">
               <div style={{justifyContent:"Center"}}className="side-nav-main__inner-list-item-title">Socials:</div>
                 <div className="side-nav-main__inner-list-footer-content">
                   <a className="navbar-main__link"href="/#">
@@ -303,7 +307,7 @@ function Navbar() {
                   </div>
                 </a>
               </div>
-            </div>
+            </li>
           </ul>
           
         </div>
@@ -314,9 +318,53 @@ function Navbar() {
     <div onClick={handleClick02}className={`account-nav-main__background${setActiveCheck02 ? ' active' : ''}`}/>
 
     <div className={`account-nav-main__inner${setActiveCheck02 ? ' active' : ''}`}>
-      <div className="account-nav-main__inner-list">
+      <ul className="account-nav-main__inner-list">
 
-      </div>
+        <li className="account-nav-main__inner-list-item-title">Account</li>
+
+        <ul className="account-nav-main-inner-list-container">
+
+          <li className="account-nav-main__inner-list-item">
+            <div className="account-nav-main__inner-list-item-subtitle">Log-In</div>
+            <div className="account-nav-main__inner-list-item-icon"><LoginIcon/></div>
+          </li>
+            
+          <li className="account-nav-main__inner-list-item">
+            <div className="account-nav-main__inner-list-item-subtitle">Create Account</div>
+            <div className="account-nav-main__inner-list-item-icon"><PersonAddAlt1Icon/></div>
+          </li>
+
+        </ul>
+
+          <li className="account-nav-main__inner-list-item-title">Misc</li>
+
+          <ul className="account-nav-main-inner-list-container">
+          
+          <li className="account-nav-main__inner-list-item">
+            <div className="account-nav-main__inner-list-item-subtitle">Site Appearance</div>
+            <div className="account-nav-main__inner-list-item-icon"><LightModeIcon/></div>
+          </li>
+
+          <li className="account-nav-main__inner-list-item">
+            <div className="account-nav-main__inner-list-item-subtitle">Get Support</div>
+            <div className="account-nav-main__inner-list-item-icon"><HelpIcon/></div>
+          </li>
+
+          <li className="account-nav-main__inner-list-item">
+              <div className="account-nav-main__inner-list-item-subtitle">Donate</div>
+              <div className="account-nav-main__inner-list-item-icon"><VolunteerActivismIcon/></div>
+            </li>
+
+          <li className="account-nav-main__inner-list-item">
+              <div className="account-nav-main__inner-list-item-subtitle">Legal</div>
+              <div className="account-nav-main__inner-list-item-icon"><GradingIcon/></div>
+            </li>
+
+          </ul>
+
+
+
+      </ul>
     </div>
 </div>
 
